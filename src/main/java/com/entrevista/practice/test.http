@@ -1,0 +1,43 @@
+###
+
+GET http://localhost:8080/api/products/all HTTP/1.1
+
+###
+
+POST localhost:8080/api/products/create HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Casacaras",
+  "description": "Unas cascaras mas",
+  "price": 45,
+  "quantity": 3
+}
+
+###
+
+DELETE localhost:8080/api/products/delete/1 HTTP/1.1
+
+###
+
+PUT localhost:8080/api/products/update/5 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Fue cambiado",
+  "description": "Tambien fue cambiada",
+  "price": 100,
+  "quantity": 400
+}
+
+###
+
+GET localhost:8080/api/products/quantity HTTP/1.1
+
+###
+
+GET localhost:8080/api/products/nameless HTTP/1.1
+
+###
+
+GET localhost:8080/api/products/primenumber HTTP/1.1
