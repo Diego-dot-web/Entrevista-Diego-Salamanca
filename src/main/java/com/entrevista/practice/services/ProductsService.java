@@ -72,5 +72,4 @@ public class ProductsService {
 		String result = controller.primeNumber();
 		return new ResponseEntity<>(result, HttpStatus.OK);
 	}
-
 }
